@@ -4,24 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+    background-image: url('https://i.imgur.com/qg5xsSB.jpg'),
+}
+
 .page-title {
   color: #e3a000;
   font-family: 'Fontdiner Swanky', cursive;
-  font-weight: normal;
+  margin-top: 20px;
   text-align: center;
   font-size: 4em;
+  padding: 10px;
 }
 
 .game-info-container {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
+  background-color: #00165e;
+  border-radius: 0.25rem;
 }
 
 .game-info {
-  color: #033807;
+  color: #fff;
   font-style: bold;
-  font-size: 1em;
+  font-size: 2rem;
+  padding: 10px;
 }
 
 .game-container {
@@ -73,6 +81,7 @@
   background-color: #9c1203;
 }
 
+/*
 .card-face:hover .cob-web {
   width: 52px;
   height: 52px;
@@ -81,6 +90,7 @@
 .card-back:hover .spider {
   transform: translateY(0);
 }
+*/
 
 .card-value {
   position: relative;
@@ -150,8 +160,14 @@
     grid-template-columns: repeat(4, auto)
   }
 
+  .page-title {
+      font-size: 35px;
+      padding: 0;
+  }
+
   .game-info-container {
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
+    font-size: 20px;
   }
 }
