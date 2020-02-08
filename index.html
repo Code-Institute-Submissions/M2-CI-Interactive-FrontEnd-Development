@@ -12,27 +12,208 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <div class="parallax parallax1"></div>
-    <div class="boxparallax1">
-    <h1>I solemnly swear... </h1>
-    </div>
 
-    <div class="parallax parallax1"></div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="boxparallax2">
-    <h2>... that I'm up to no good!...</h2>
-    </div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+    <!--Bootstrap & CSS stylesheet links-->
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/877201db70.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Josefin+Slab:700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon-16x16.png">
+	<title>Harry_Potter_Fun</title>
+</head>
 
-    <div class="parallax parallax2"></div>
-    <div class="boxparallax3">
-    <h2>Welcome</h2>
+<body>
+
+  <h1 class="page-title">HP Memory Game</h1>
+  <div class="overlay-text visible">
+    <i class="fas fa-mouse"></i>Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
     </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/crest.png" alt="hogwarts crest icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/crest.png" alt="hogwarts crest icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/frog.png" alt="frog icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/frog.png" alt="frog icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/glasses.png" alt="harry potter glasses icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/glasses.png" alt="harry potter glasses icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/goblet.png" alt="goblet of fire icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/goblet.png" alt="goblet of fire icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/hallows.png" alt="deadly hallows icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/hallows.png" alt="deadly hallows icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/luna.png" alt="luna loveheart icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/luna.png" alt="luna lovegood icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/quill.png" alt="quill icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/quill.png" alt="quill icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/wand.png" alt="wand icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bolt" src="./assets/images/cardBackground.png" alt="bolt icon in yellow background">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="./assets/images/wand.png" alt="wand icon">
+      </div>
+    </div>
+  </div>
+
+
     
-    <div class="parallax parallax2"></div>
+
+        <footer><div class="copyright">
+            Roxana Hefferon &copy2020
+        </div>
+            
+            
+           </footer>
+        
 
 
-</div>
+
+         
+
+<!--JQuery, Popper.js & Bootstrap JS-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+    <script type="text/javascript" src="./assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
 
