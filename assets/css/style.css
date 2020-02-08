@@ -10,7 +10,6 @@
   font-weight: normal;
   text-align: center;
   font-size: 4em;
-  margin-top: -40px;
 }
 
 .game-info-container {
@@ -68,6 +67,7 @@
 
 .card-back {
   transform: rotateY(0); 
+  background-color: #9c1203;
 }
 
 .card-face:hover .cob-web {
@@ -90,7 +90,7 @@
 }
 
 .card-front {
-  background-color: #fff;
+  background-color: #033807;
 
   transform: rotateY(180deg);
 }
@@ -145,7 +145,7 @@
 
 @media (max-width: 600px) {
   .game-container {
-    grid-template-columns: repeat(2, auto)
+    grid-template-columns: repeat(4, auto)
   }
 
   .game-info-container {
