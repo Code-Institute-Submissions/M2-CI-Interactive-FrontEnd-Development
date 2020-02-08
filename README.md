@@ -84,6 +84,21 @@ All the overlay displays such as: "Victory", "Game over" share the exact same st
 <pre><span class="pl-c1">git clone https://github.com/USERNAME/REPOSITORY</span></pre></li>
 </ol>
 
+<h2>Testing</h2>
+<ul>
+<li>Developer tools</li>
+<li>W3C Markup Validation Service | Go to website <a href="https://validator.w3.org/">here</a></li>
+Document checking completed. No errors or warnings to show.
+<li>CSS Validation Service | Go to website <a href="https://jigsaw.w3.org/css-validator/">here</a></li>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+
+
 <h2>Credits</h2>
 <h4>Media</h4>
 
@@ -158,6 +173,6 @@ https://www.w3schools.com/js/js_arrow_function.asp
 <p>JavaScript string charAt() method</p>
 https://www.w3schools.com/jsref/jsref_charat.asp
 
-<h2>Disclaimer</h3>
+<h2>Disclaimer</h2>
 
 <p>Created for educational purposes only.</p>

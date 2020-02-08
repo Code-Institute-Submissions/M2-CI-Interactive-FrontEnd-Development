@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Raleway:500&display=swap');
+
 /* memory game */
 
 * {
   box-sizing: border-box;
-}
-
-body {
-    background-image: url('https://i.imgur.com/qg5xsSB.jpg'),
 }
 
 .page-title {
@@ -21,13 +19,14 @@ body {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
   background-color: #00165e;
   border-radius: 0.25rem;
 }
 
 .game-info {
   color: #fff;
-  font-style: bold;
+  font-weight: bold;
   font-size: 2rem;
   padding: 10px;
 }
