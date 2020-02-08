@@ -3,8 +3,8 @@ class AudioController {
         this.bgMusic = new Audio('./assets/audio/quiz.mp3');
         this.flipSound = new Audio('./assets/audio/wand.mp3');
         this.matchSound = new Audio('./assets/audio/magic.mp3');
-        this.victorySound = new Audio('Assets/Audio/victory.wav');
-        this.gameOverSound = new Audio('Assets/Audio/gameOver.wav');
+        this.victorySound = new Audio('./assets/audio/success.mp3');
+        this.gameOverSound = new Audio('./assets/audio/gameover.mp3');
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
     }
@@ -31,7 +31,7 @@ class AudioController {
     }
 }
 
-class MixOrMatch {
+class hPFun {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
         this.totalTime = totalTime;
@@ -120,7 +120,8 @@ class MixOrMatch {
             this.busy = false;
         }, 1000);
     }
-    shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
+    // Fisher-Yates Shuffle Algorithm.
+    shuffleCards(cardsArray) { 
         for (let i = cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
             cardsArray[randIndex].style.order = i;
@@ -144,7 +145,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(100, cards);
+    let game = new hPFun(100, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
