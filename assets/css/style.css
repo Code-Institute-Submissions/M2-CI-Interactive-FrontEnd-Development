@@ -80,16 +80,11 @@
   background-color: #9c1203;
 }
 
-/*
-.card-face:hover .cob-web {
-  width: 52px;
-  height: 52px;
-}
 
-.card-back:hover .spider {
+.card-back:hover {
   transform: translateY(0);
 }
-*/
+
 
 .card-value {
   position: relative;
@@ -124,6 +119,7 @@
 
 .overlay-text-small {
   font-size: .3em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .overlay-text.visible {
