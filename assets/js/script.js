@@ -121,6 +121,7 @@ class hPFun {
         }, 1000);
     }
     // Fisher-Yates Shuffle Algorithm.
+
     shuffleCards(cardsArray) { 
         for (let i = cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
@@ -134,12 +135,6 @@ class hPFun {
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
-}
-
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
 }
 
 function ready() {

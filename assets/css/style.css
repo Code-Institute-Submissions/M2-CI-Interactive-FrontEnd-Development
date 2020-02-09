@@ -136,6 +136,7 @@ body {
   font-size: .3em;
   font-family: 'Raleway', sans-serif;
   background-color: #e3a000;
+  padding: 5px;
   border-radius: 0.25rem;
 }
 
@@ -145,7 +146,7 @@ body {
 }
 
 .fab {
-    color: #2d004d;
+    color: #fff;
 }
 
 @keyframes dance {
