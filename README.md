@@ -2,10 +2,19 @@
 
 <h2>How I built the game</h2>
 
+I started by creating a 4 x 4 grid game board to hold 16 cards with a HP icon on their
+front and red backgrounds (later added the 'bolt' icon to all cards) 
+After styling I then created an array from .overlay-text and .cards HTML collections, 
+then added a lop and event listeners to both. Folowing this I went ahead and set up the controllers for 
+the audio with a constructor function. Likewise, I used constructor function to create a new instance
+of hPFun were I set the time for the game to 60 seconds and the move count to 0.
+Then created a function to start the game 
+
+
 <h2>Project goals</h2>
-<p>Being huge Harry Potter fans in my house I decided to create a page with simple games around this theme. 
+Being huge Harry Potter fans in my house I decided to create a page with simple games around this theme. 
 HP Fun started as a memory game with the mere goal to entertain the player, 
-then moved onto creating a basic sorting hat experience and a quotes generator.</p>
+then moved onto creating a basic sorting hat experience and a quotes generator.
 
 <h2>Player goals</h2>
 <ul>

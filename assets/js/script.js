@@ -1,3 +1,5 @@
+//constructor for audio controls
+
 class AudioController {
     constructor() {
         this.bgMusic = new Audio('./assets/audio/quiz.mp3');
@@ -5,9 +7,11 @@ class AudioController {
         this.matchSound = new Audio('./assets/audio/magic.mp3');
         this.victorySound = new Audio('./assets/audio/success.mp3');
         this.gameOverSound = new Audio('./assets/audio/gameover.mp3');
-        this.bgMusic.volume = 0.5;
+        this.bgMusic.volume = 0.2;
+        this.gameOverSound.volume = 0.2;
         this.bgMusic.loop = true;
     }
+
     startMusic() {
         this.bgMusic.play();
     }
@@ -36,7 +40,7 @@ class hPFun {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-remaining')
+        this.timer = document.getElementById('time-remaining') // set game to 60 seconds play
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
@@ -120,8 +124,8 @@ class hPFun {
             this.busy = false;
         }, 1000);
     }
-    // Fisher-Yates Shuffle Algorithm.
-
+    //&nbspFisher-Yates&nbspShuffle&nbspAlgorithm.
+    
     shuffleCards(cardsArray) { 
         for (let i = cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
@@ -137,14 +141,26 @@ class hPFun {
     }
 }
 
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+}
+
+// started by creating an array from the overlay-text and card classes HTML collections
+
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new hPFun(100, cards);
 
+// added lop and event listener
+
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
+
+// once overlay not visible (click) start game
             game.startGame();
         });
     });
