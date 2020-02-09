@@ -102,7 +102,7 @@ Document checking completed. No errors or warnings to show.
 </ul>
 <h2>Manual Testing</h2>
 <p>Manual testing was performed on the following made and model devices:
-iPhone X, iPad Pro</p>
+iPhone X, iPad Pro, Motorola Moto G Play, Samsung J7 Prime, iPhone6</p>
 
 <h2>Credits</h2>
 <h4>Media</h4>
