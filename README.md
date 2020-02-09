@@ -1,4 +1,7 @@
 <h1>IFED – MILESTONE PROJECT 2 – CI</h1>
+<div>
+<img src=https://i.imgur.com/etc6Tqq.png>
+</div>
 
 <h2>Project goals</h2>
 Being huge Harry Potter fans in my house I decided to create a page with simple games around this theme. 
