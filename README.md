@@ -28,22 +28,20 @@ then moved onto creating a basic sorting hat experience and a quotes generator.
 
 <p>The game is fully responsive allowing the user to play on any devices. I’ve paid special attention to make sure desktop version fits all the visual information on the screen without scrolling as to allow the user to see and engage with all the game features. 
 An icon opening a modal to show the game instructions was added to the page.</p>
-<p>All thru the games the same design is shared.
-All the overlay displays such as: "Victory", "Game over" share the exact same style to provide consistency.<p>
+<p>All thru the game the same design is shared.
+All the overlay displays such as: "Success" and "Game over" share the exact same style to provide consistency.<p>
 
 <h3>Existing features</h3>
 <ul>
-•	Log in page consists of a form and a submit button allowing the player to choose the name before the game starts, which is later displayed on the screen.
-•	Information icon was provided to allow the user to read game rules before starting the game.
-•	Timer and the flip count is provided.
-•	Users name with is displayed.
-•	"Game over" and "Victory" overlays are activated on each level also consisting of the button encouraging user to restart a game or progress to the next level
-•	The same footer is used throughout the game indicating copyright with a year of game creation and a GitHub icon leading to my repository.
+•	Timer and flip count provided.
+•	"Game over" and "Success" overlays provided with restart buttons.
+•	Different sounds for different actions.
 
 <h3>Features to improve or create</h3>
 <ul>
 <li>Add more levels and more games</li>
-<li>Add the grading system, that remembers users best score (need to advance in JS).</li>
+<li>Music controls</li>
+<li>Add a ranking system, that remembers users best score (need to advance in JS).</li>
 <li>Add a CSS animation for when the game is won.</li>
 </ul>
 <h2>Technologies used</h2>
