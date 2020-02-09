@@ -97,7 +97,12 @@ Document checking completed. No errors or warnings to show.
         alt="Valid CSS!" />
     </a>
 </p>
-
+<li>Web Accessibility Evaluation Tool | Go to website <a href="https://wave.webaim.org/extension/">here</a></li>
+<li>DOM Manipulation</li>
+</ul>
+<h2>Manual Testing</h2>
+<p>Manual testing was performed on the following made and model devices:
+iPhone X, iPad Pro</p>
 
 <h2>Credits</h2>
 <h4>Media</h4>
