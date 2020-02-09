@@ -5,7 +5,7 @@ class hPFun {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-remaining') // set game to 60 seconds play
+        this.timer = document.getElementById('time-remaining'); // set game to 60 seconds play
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
 }
@@ -24,7 +24,7 @@ startGame() {
         this.shuffleCards(this.cardsArray);
         this.countdown = this.startCountdown();
         this.busy = false;
-    }, 500)
+    }, 500);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
@@ -171,7 +171,7 @@ class AudioController {
 startMusic() {
     this.music.play();
     setTimeout(() => {
-        this.music.play()
+        this.music.play();
     }, 3000);
 }
     
