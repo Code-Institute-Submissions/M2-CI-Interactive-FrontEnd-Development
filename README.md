@@ -89,10 +89,10 @@ iPhone X, iPad Pro, Motorola Moto G Play, Samsung J7 Prime, iPhone6</p>
 <h2>Credits</h2>
 <h4>Media</h4>
 
-ICONS | <a href="https://www.iconfinder.com/search/?q=harry%20potter&price=free&type=vector">Inconfinder</a>
+Icons | <a href="https://www.iconfinder.com/search/?q=harry%20potter&price=free&type=vector">Inconfinder</a>
 
 
-PICTURE | Photo by Artem Maltsev
+Pictures | Photo by Artem Maltsev
 <a href="https://unsplash.com/photos/3n7DdlkMfEg">Unsplash</a>
 
 
@@ -109,15 +109,28 @@ Converting files | <a href="https://convertio.co/download/">Convertio</a>
 Audio files | <a href="https://www.zapsplat.com/sound-effect-category/royalty-free-music/">Zapsplat</a> and 
 <a href="http://soundbible.com/474-Magic-Wand-Noise.html">Soundbible</a>
 
-<h2>To get a better understanding of JS I used:</h2>
+<h2>For a better understanding of JS I used:</h2>
 To shuffle an array | <a href="https://www.w3resource.com/javascript-exercises/javascript-array-exercise-17.php">w3resource</a>
+
 Background-image/data-image | <a href="https://stackoverflow.com/questions/26967890/css-set-background-image-by-data-image-attr">stackoverflow</a>
+
 Data Picture | <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-en.html">wet-boew</a>
+
 HTML data-* Attributes | <a href="https://www.w3schools.com/tags/att_global_data.asp">w3schools</a>
+
 JavaScript flip() method <a href="https://stackoverflow.com/questions/8972253/how-to-create-a-card-flip-effect-on-div-using-javascript">stackoverflow</a>
+
 Arrow function | <a href="https://www.w3schools.com/js/js_arrow_function.asp">w3schools</a>
+
 JavaScript string charAt() method | <a href="https://www.w3schools.com/jsref/jsref_charat.asp">w3schools</a>
+
+<h4>Built my game with the help and code from the following videos:</h4>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ZniVgo8U7ek">1</a></li>
+<li><a href="https://www.youtube.com/watch?v=3uuQ3g92oPQ">2</a></li>
+<li><a href="https://www.youtube.com/watch?v=c_ohDPWmsM0">3</a></li>
 
 <h2>Disclaimer</h2>
 
-<p>Created for educational purposes only.</p>
+<p>For educational purposes only.</p>
