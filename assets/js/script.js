@@ -35,6 +35,8 @@ class AudioController {
     }
 }
 
+// New instance
+
 class hPFun {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -45,12 +47,14 @@ class hPFun {
         this.audioController = new AudioController();
     }
 
+// start game
+
     startGame() {
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
-        this.cardToCheck = null;
-        this.matchedCards = [];
-        this.busy = true;
+        this.cardToCheck = null; // not allow clicking on card already face up
+        this.matchedCards = []; // array to push matched cards
+        this.busy = true; // not allowed clicking 
         setTimeout(() => {
             this.audioController.startMusic();
             this.shuffleCards(this.cardsArray);
@@ -124,7 +128,7 @@ class hPFun {
             this.busy = false;
         }, 1000);
     }
-    //&nbspFisher-Yates&nbspShuffle&nbspAlgorithm.
+// fisher-yates shuffle
     
     shuffleCards(cardsArray) { 
         for (let i = cardsArray.length - 1; i > 0; i--) {
@@ -152,7 +156,10 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new hPFun(100, cards);
+    
+// new instance of hpFun
+
+    let game = new hPFun(60, cards);
 
 // added lop and event listener
 
